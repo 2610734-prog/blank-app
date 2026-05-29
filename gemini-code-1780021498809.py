@@ -1,7 +1,6 @@
-
 import streamlit as st
 
-# 웹페이지 제목 설정
+# 웹페이지 제목
 st.title("🔢 재미있는 구구단 프로그램")
 st.subheader("원하는 단을 선택하면 구구단이 출력됩니다.")
 
@@ -10,8 +9,7 @@ dan = st.slider("몇 단을 보고 싶으신가요?", min_value=2, max_value=9, 
 
 st.markdown(f"### 🎯 {dan}단 출력 결과")
 
-# 구구단 계산 및 출력 (들여쓰기 주의!)
+# 구구단 계산 및 출력
 for j in range(1, 10):
-    result = dan * j
-    # 포맷팅을 안전하게 분리하고, 곱하기 기호를 'x'로 명확하게 표현했습니다.
-    st.write(f"{dan} x {j} = {result}")
+    # st.write를 사용하면 웹 화면에 텍스트가 출력됩니다.
+    st.write(f"{dan} × {j} = {dan * j}")
